@@ -1,0 +1,184 @@
+
+body {
+
+  margin: 0;
+  padding: 0;
+
+  font-family: sans-serif;
+
+  box-sizing: border-box;
+}
+
+
+header {
+
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  background: #333;
+
+  img#top-logo {
+
+    flex-grow: 1;
+
+  }
+
+  h1 {
+
+    flex-grow: 1;
+    font-family: serif;
+    color: #eee;
+
+  }
+
+  nav {
+
+    flex-grow: 1;
+    align-items: center;
+
+    ul {
+      list-style-type: none;
+      display: inline-block;
+      padding: 10px;
+      margin: 0;
+
+      li {
+	margin: 20px auto;
+	padding: 12px;
+	display: inline-block;
+	text-transform: uppercase;
+	a {
+	  color: #eee;
+	  text-decoration: none;
+	}
+      }
+    }
+
+    ul.get-started-tr {
+      background: #069;
+      li {
+	color: white;
+      }
+    }
+  }
+  
+}
+
+
+
+div#top-splash {
+
+  /* background: video */
+  background: #77f;
+  height: 100vh;
+
+  #top-middle-title {
+
+    position: relative;
+    top: 50vh;
+    left: 50vh;
+    /* margin: 0 auto; */
+    
+    p {
+
+      text-transform: uppercase;
+      color: #eee;
+
+      &#recode-your-future {
+
+	background: rgba(0,0,0,.4);
+	font-weight: bold;
+	font-size: 3rem;
+
+      }
+
+      &#find-your-course {
+	background: #d42;
+      }
+    }
+  
+  }
+
+  #down-from-top {
+  }
+}
+
+#course-information {
+
+  background: #ddd;
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+
+  
+
+  h2 {
+      
+    color: #069;
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px auto 0;
+    text-align: center;
+      
+  }
+    
+  div {
+    display: flex;
+    div {
+
+      display: inline-block;
+      flex-grow: 0;
+
+      &.non-item-ci {
+	flex-grow: 1;
+      }
+
+      &.item-ci {
+	margin: 10px;
+	
+	background: white;
+	
+      }
+
+      h3 {
+	margin: 20px;
+	font-size: 2.2rem;
+      }
+
+      p {
+
+      }
+    
+      .ablock {
+
+	display: block;
+	width: 100%;
+	text-align: center;
+	
+	background: #d42;
+	color: white;
+      
+      }
+    }
+  }
+}
+
+
+#keeps-pace {
+
+  width: 50%;
+  margin: 20px auto;
+  
+  h3 {
+
+    color: #069;
+
+  }
+
+  p {
+
+  }
+
+}
