@@ -30,6 +30,7 @@ header {
   width: 100%;
   background: #333;
   align-items: center;
+  z-index: 10;
 }
 header img#top-logo {
   margin: 14px;
@@ -76,6 +77,14 @@ header nav ul.get-started-tr li {
 div#top-splash {
   /* background: video */
   background: #ddd;
+  height: 100vh;
+}
+div#top-splash #top-splash-video {
+  position: absolute;
+  z-index: 0;
+}
+div#top-splash #top-splash-video video {
+  width: 100vw;
   height: 100vh;
 }
 div#top-splash #top-middle-title {

@@ -41,6 +41,7 @@ header {
   width: 100%;
   background: #333;
   align-items: center;
+  z-index: 10;
 
   img#top-logo {
 
@@ -104,6 +105,15 @@ div#top-splash {
   /* background: video */
   background: #ddd;
   height: 100vh;
+
+  #top-splash-video {
+    position: absolute;
+    z-index: 0;
+    video {
+      width: 100vw;
+      height: 100vh;
+    }
+  }
 
   #top-middle-title {
 
