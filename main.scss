@@ -1,12 +1,35 @@
 
+@import url('https://fonts.googleapis.com/css?family=Overpass:400,400i,700,700i&display=swap');
+
 body {
 
   margin: 0;
   padding: 0;
 
-  font-family: sans-serif;
+  font-family: "Overpass", sans-serif;
 
   box-sizing: border-box;
+
+  p {
+    line-height: 160%;
+    font-size: 1.3rem;
+    color: #444;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .ablock {
+    text-transform: uppercase;
+    background: #d42;
+    color: white;
+  }
 }
 
 
@@ -17,9 +40,12 @@ header {
   display: flex;
   width: 100%;
   background: #333;
+  align-items: center;
 
   img#top-logo {
 
+    margin: 14px;
+    width: 50%;
     flex-grow: 1;
 
   }
@@ -28,13 +54,19 @@ header {
 
     flex-grow: 1;
     font-family: serif;
+    font-weight: 400;
+    font-size: 1.5rem;
     color: #eee;
 
   }
 
+  div#header-spacer {
+    flex-grow: 1;
+  }
+
   nav {
 
-    flex-grow: 1;
+    flex-grow: 0;
     align-items: center;
 
     ul {
@@ -76,14 +108,20 @@ div#top-splash {
   #top-middle-title {
 
     position: relative;
-    top: 50vh;
-    left: 50vh;
+    top: 40vh;
+    left: 45vh;
     /* margin: 0 auto; */
+
+    
     
     p {
-
+      display: inline-block;
+      margin: 0;
+      padding: 20px;
       text-transform: uppercase;
+      font-weight: bold;
       color: #eee;
+      
 
       &#recode-your-future {
 
@@ -94,6 +132,7 @@ div#top-splash {
       }
 
       &#find-your-course {
+	margin-top: 15px;
 	background: #d42;
       }
     }
@@ -137,17 +176,19 @@ div#top-splash {
 
       &.item-ci {
 	margin: 10px;
-	
+	max-width: 380px;
 	background: white;
 	
       }
 
       h3 {
-	margin: 20px;
+	margin: 30px 30px 10px;
 	font-size: 2.2rem;
       }
 
       p {
+
+	margin: 30px 20px;
 
       }
     
@@ -155,10 +196,12 @@ div#top-splash {
 
 	display: block;
 	width: 100%;
+	padding: 10px 0;
 	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.5rem;
 	
-	background: #d42;
-	color: white;
+
       
       }
     }
@@ -168,17 +211,66 @@ div#top-splash {
 
 #keeps-pace {
 
-  width: 50%;
-  margin: 20px auto;
-  
-  h3 {
+  width: 44%;
+  margin: 60px auto;
+  display: flex;
+  align-items: center;
 
-    color: #069;
+  img {
+    margin-right: 20px;
+    flex-grow: 0;
+    display: inline-block;
+    width: 200px;
+    height: 233px;
+  }
+  
+  div {
+    display: inline-block;
+    flex-grow: 0;
+  
+    h3 {
+
+      font-weight: 400;
+      font-size: 2.4rem;
+      
+      color: #069;
+
+    }
+
+    p {
+      
+    }
+
+    
+  }
+}
+
+
+#python-chai {
+
+  margin: 40px auto;
+  display: flex;
+  width: 50%;
+
+  img {
+    display: inline-block;
+    flex-grow: 0;
+    width: 564px;
+    height: 320px;
+    margin-right: 20px;
 
   }
 
-  p {
+  h2 {
+    color: #d42;
+  }
 
+  .ablock {
+    display: inline-block;
+    padding: 10px;
+
+    font-size: 1.8rem;
+    font-weight: 800;
   }
 
 }
